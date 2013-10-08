@@ -1,6 +1,14 @@
+'''
+Author: Guy Hawkins (@GHawk1ns)
+Date: September 2010
+
+strips any spaces or hyphens then checks ISBN for correct length and characters
+if it meets requirements, the string is returned as a list
+
+DISCLAIMER : This was one of the first projects. While the style/design might not be incredible,
+this is meant to serve as a snapshot of my progression as a developer. 
+'''
 import string
-#strips any spaces or hyphens then checks ISBN for correct length and characters
-# if it meets requirements, the string is returned as a list
 def strip_check_list(isbn):
  isbn = isbn.replace('-','')
  isbn = isbn.replace(' ','')
